@@ -1,12 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/OwlCarousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/OwlCarousel/dist/assets/owl.theme.default.min.css" />
     <title>MyBlog | Aston Lin</title>
 </head>
+
 <body>
-    
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                               START SECTION 1 - THE NAVBAR SECTION  
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+        <div class="container">
+            <a href="#" class="navbar-brand">JCStaff</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#header">HOME</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Testimonials</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">faq</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 2 -  HEADER
+    /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section class="header" id="header">
+            <div class="row header m-0">
+                <div class="text">
+                    <p class="h1">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                    <br />
+                    <p class="h3 subtitle">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus
+                        accusantium magni aliquam, vitae itaque esse ratione eos minima.
+                    </p>
+                    <br />
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <a href="http://hcilab.nkust.edu.tw/" target="_blank"
+                                class="btn-rounded col col-lg-2 col-sm-3">
+                                ABOUT US
+                            </a>
+                            <div class="col-md-auto col-sm-auto"></div>
+                            <a href="https://mis.nkust.edu.tw/" target="_blank"
+                                class="btn-rounded col col-lg-3 col-sm-6">
+                                GO TO NKUST MIS
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 3 -  PERSONAL FILE
+    /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+        <section id="about">
+            <div class="light-bg">
+                <div class="container py-3">
+                    <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide col-lg-5 mb-md-4"
+                            data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/png1.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/png2.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/png3.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/png4.jpg" class="d-block w-100" alt="..." />
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="col-lg-7 shadow-sm bg-light card p-0 about-card">
+                            <div class="card-header text-center head">
+                                <p class="h3">ABOUT ME</p>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title h5">Aston N. Lin</p>
+                                <ul class="card-text">
+                                    <li>程式設計（Java、Python、R）</li>
+                                    <li>前端網頁設計（HTML、CSS、Bootstrap）</li>
+                                    <li>後端網頁設計（Java Spring Boot、Python Flask）</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research">
+            <div class="dark-bg">
+                <div class="container py-4">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-box shadow">
+                                <img src="img/research1.jpg" alt="research1 img" class="img-fluid">
+                                <div class="portfolio-info"><div class="caption"></div></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-box shadow"></div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="portfolio-box shadow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- /////////////////////////////////////////////////////////////////////////////////////////////////
+                            START SECTION 4 -  FOOTER
+    /////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <footer class="footer">
+        <div class="footer-bottom py-5">
+            <div class="container">
+                <div class="row text-center text-white-50">
+                    <div class="col-12">
+                        <div class="footer-bottom_copyright">
+                            © Copyright 2023 | Created by Natsuki
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script>
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 5,
+                },
+            },
+        });
+    </script>
 </body>
+
 </html>

@@ -1,0 +1,40 @@
+@use "../custom" as *;
+@use "../components/mixins" as *;
+
+.header {
+  background-image: url("/img/home-page.jpg");
+  background-repeat: no-repeat;
+  max-width: 2500px;
+  @include media-breakpoint-down(lg) {
+    height: 900px;
+    .text {
+      margin-top: 250px;
+    }
+  }
+  @include media-breakpoint-down(md) {
+    height: 600px;
+    .text {
+      margin-top: 150px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    height: 400px;
+    .subtitle {
+      display: none;
+    }
+    .text {
+      margin-top: 75px;
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    height: 1024px;
+    .text {
+      margin-top: 330px;
+    }
+  }
+  .text {
+    text-align: center;
+    position: relative;
+    color: $footer;
+  }
+}

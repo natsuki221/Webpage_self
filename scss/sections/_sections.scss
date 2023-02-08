@@ -1,0 +1,21 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+section {
+    position: relative;
+    .light-bg {
+        background-color: $light-green;
+    }
+    .dark-bg {
+        background-color: $footer;
+    }
+    .about-card {
+        color: $footer;
+        font-family: "Noto Sans";
+        .head {
+            color: $white;
+            padding-top: 20px;
+            background-color: $secondary;
+        }
+    }
+}
